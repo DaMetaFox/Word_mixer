@@ -2,16 +2,18 @@
 frase = ('Little fly, Thy summer’s play My thoughtless hand Has brushed away. Am not I A fly like thee? Or art not thou A man like me?')
 
 # faz a divisao da frase em palavras e cria nova lista words_list
-words_list = [frase.split()]
+words_list = frase.split()
+print(words_list)
+
 
 # Determinar o comprimento da lista nova
 print("** a NOVA lista tem", len(words_list), "elementos **, ou seja: \n", words_list, '\n')
 
 # pesquisar lista 'words_list' e converter palavras com 3 e 7 letras
 
-for item in words_list:
-    if len(item) <= 3:
-        item.lower()
+for word in words_list:
+    if len(word) <= 3:
+        item = item.lower()
     print(item)
 #     elif len(item) >= 7:
 #         # y = str(item.upper())
@@ -21,7 +23,7 @@ for item in words_list:
 #     elif len(i) >= 7:
 #       words_list(i).upper
 # print(words_list)
-       
+        
 def word_mixer():
     words_list_sort = words_list.sort()
 
