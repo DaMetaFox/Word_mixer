@@ -23,7 +23,36 @@ for word in words_list:
 #     elif len(i) >= 7:
 #       words_list(i).upper
 # print(words_list)
-        
+
+print("")
+print("")
+
+#!método 1
+for index, word in enumerate(words_list):
+    if len(word) <= 3:
+        words_list[index] = word.lower()
+    elif len(word) >= 7:
+        words_list[index] = word.upper()
+print("com o método1" + str(words_list))
+
+print("")
+print("")
+#!método2
+new_list = []
+for word in words_list:
+    if len(word) <= 3:
+        new_list.append(word.lower())
+    elif len(word) >= 7:
+        new_list.append(word.upper())
+    else:
+        new_list.append(word)
+print("com o método2" + str(new_list))
+
+
+
+
+
+
 def word_mixer():
     words_list_sort = words_list.sort()
 
